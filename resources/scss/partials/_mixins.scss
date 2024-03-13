@@ -9,3 +9,8 @@
     text-align: start;
     font-weight: bold;
 }
+
+@mixin page-layout{
+    width: 70%;
+    margin: 0 auto;
+}
