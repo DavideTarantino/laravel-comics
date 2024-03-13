@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
 
-Route::get('/')
+    $products = config('comics');
+
+    return view('welcome', compact( 'products' ));
+})->name('welcome');
